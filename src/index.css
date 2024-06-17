@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .rotate {
+      transform: rotate(180deg);
+    }
+    .input-styled {
+      @apply z-10 w-full bg-transparent outline-none rounded-md border-[1px] border-gray-400 px-4 py-[6px] focus:border-primary valid:border-primary
+    }
+    .input-styled-account {
+      @apply rounded-sm bg-gray-100 px-[15px] py-[12.5px] outline-none
+      transition-all focus:shadow-primary
+    }
+  }
+
+.modal-open {
+  overflow: hidden;
+  scroll-behavior: none;
+  touch-action: none;
+}
